@@ -1,0 +1,6 @@
+import math
+
+def sin_gen (time, frequency, samplingFrequency):
+    ndarray = []
+    for i in range (0, time*frequency, 1):
+        

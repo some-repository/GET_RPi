@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-LEDs = [24, 25, 8, 7, 12, 16, 20, 21]
+LEDs = [10, 9, 11, 5, 6, 13, 19, 26]
 LED_number = 8
 bit_depth = 8
 
