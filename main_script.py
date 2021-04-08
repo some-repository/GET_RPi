@@ -57,12 +57,24 @@ def lightNumber (number):
         GPIO.output(LEDs [7 - i], arr [i])
     time.sleep (10)
 
+def runningPattern(pattern, direction):
+	if direction == 1:
+            for i in range (0, bit_depth, 1):
+				lightNumber (pattern >> i)
+    else if direction == 0:
+            for i in range (0, bit_depth, 1):
+				lightNumber (pattern << i)
+	
+
+
 
 #lightUp (1, 1)
 #blink (0, 10, 0.5)
 #runningLight (3, 0.5)
 #runningDark (4, 0.5)
-lightNumber (123)
+#lightNumber (123)
+runningPattern (5, 1)
+runningPattern (5, 0)
 
 GPIO.cleanup ()
 
